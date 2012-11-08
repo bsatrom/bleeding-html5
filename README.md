@@ -14,10 +14,15 @@ Let's take a look at Default Parameters first.
 2. Open The FireBug console, then switch to multi-line mode (arrow icon in the lower-right).
 3. Enter the following into the console window, then click run
 
-		function f(a = 0, b = a*a) {   		return [a, b]; 		}
+		function f(a = 0, b = a*a) { 
+  		return [a, b]; 
+		}
 
 		console.log(f(2, 16)); // Returns [2, 16]
-		console.log(f(2)); // Returns [2, 4]Notice that, in the first example, the values we pass in are preserved. In the second log, the value of `a*a` is provided for the missing `b` parameter.
+		console.log(f(2)); // Returns [2, 4]
+
+Notice that, in the first example, the values we pass in are preserved. In the second log, the value of `a*a` is provided for the missing `b` parameter.
+
 ### Rest Parameters
 
 Rest parameters are part of the "`arguments` killing" features of ES6, along with default parameters. Rest parameters allow you to assign an indeterminate number of parameter values in a first-class array.
@@ -26,7 +31,9 @@ Defining a rest parameters object is simple, we just use an ellipsis (`…`) imm
 
 1. Add the following in the console window:
 
-		function f(a, b, ...others) {  		return others.concat(a, b);		}
+		function f(a, b, ...others) {
+  		return others.concat(a, b);
+		}
 		
 		console.log(f(1, 2, 3, 4, 5)); // Returns [3, 4, 5, 1, 2]; 
 
@@ -65,6 +72,22 @@ The `for..of` syntax is designed to allow you to iterate over ONLY iteratable ob
 
 ## CSS
 
+### CSS Regions
+
+### CSS Filter Effects
+
+### Custom Filters
+
 ## JavaScript APIs
 
+### getUserMedia
+
+### WebGL
+
+### JavaScript Speech API
+
 ## HTML & The DOM
+
+### Responsive Images
+
+### Shadow DOM / Web Components
