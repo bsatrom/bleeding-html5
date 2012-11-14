@@ -1,17 +1,8 @@
 (function() {
-	var recognition = new webkitSpeechRecognition();
-    recognition.maxAlternatives = 5;
+	// (be15) Add the SpeechRecognition object
+	
+    // (be16) Add the onresult handler
 
-    recognition.onresult = function(event) { // SpeechRecognitionEvent
-      if (event.result.length > 0) { // SpeechRecognitionResult
-        var q = document.querySelector('#query');
-
-        q.value = event.result[0].transcript; // SpeechRecognitionAlternative
-      }
-    };
-
-    var button = document.querySelector('#search');
-    button.onclick = function() {
-    	recognition.start();
-    };
+    // (be17) Add the button click handler
+    
 })();

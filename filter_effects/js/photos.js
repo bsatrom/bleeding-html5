@@ -6,8 +6,9 @@
 		idList.push(this.id);
 	});
 	
-	// Add button handlers (dr31)
-	
+	// Add button handlers (be02)
+		
+		
 	Modernizr.load({
 		test: Modernizr.borderradius,
 		nope: '../../js/PIE.js',
